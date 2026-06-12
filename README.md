@@ -28,6 +28,26 @@ cd ~/.polybrier-skill && python3 -m pip install --user -r requirements.txt
 export ANTHROPIC_API_KEY=sk-ant-...
 ```
 
+## Why this matters for the AI-inference trade in June 2026
+
+Stanley Druckenmiller's Q1 2026 13F shows him **selling every share of Alphabet** and **initiating large positions** in AVGO (196K shares), INTC (411K), and ARM (107K). His public thesis: inference, not training, drives the bulk of forward AI compute spend.
+
+This is the kind of bet that lives in prediction markets too — Polymarket runs questions like _"Will AVGO close above $200 by year end?"_ and _"Will Intel beat Q2 EPS estimates?"_ all the time. The wrong way to use those markets is to read the YES probability and trust it. The right way is to forecast the same question yourself, persist your forecast, and 90 days later compare your Brier to the consensus's, to Druckenmiller's tag, to a Reddit thread's tag, to whichever LLM you trust.
+
+polymarket-brier is the smallest tool that makes that calibration table real. Sample:
+
+```bash
+$ /brier forecast will-avgo-close-above-275-by-eoy
+  market : will-avgo-close-above-275-by-eoy
+  yes_p  : 0.41          ← polymarket consensus
+  ours_p : 0.58          ← Haiku reasoning over Druckenmiller's Q1 thesis
+  edge   : +0.17  (FOLLOW)
+
+$ /brier forecast will-avgo-close-above-275-by-eoy --source=tag:druckenmiller_q1_13f
+  (persists with the source tag so 90 days from now, /brier digest
+   shows whether the Druckenmiller signal was actually predictive)
+```
+
 ## 30-second demo
 
 ```bash
