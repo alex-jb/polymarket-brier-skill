@@ -13,7 +13,10 @@ A Claude Code skill that forecasts Polymarket questions with Haiku, persists eve
 ## Install
 
 ```bash
-# Via ClawHub (recommended)
+# Via skills.sh (Vercel — agent-agnostic, works in Claude Code / Codex CLI / Cursor / OpenClaw)
+npx skills i alex-jb/polymarket-brier-skill
+
+# Via ClawHub
 clawhub install polymarket-brier
 
 # Via Claude Code marketplace
