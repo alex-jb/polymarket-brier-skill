@@ -1,5 +1,9 @@
 # polymarket-brier-skill
 
+[![test](https://github.com/alex-jb/polymarket-brier-skill/actions/workflows/test.yml/badge.svg)](https://github.com/alex-jb/polymarket-brier-skill/actions/workflows/test.yml)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![Release](https://img.shields.io/github/v/release/alex-jb/polymarket-brier-skill)](https://github.com/alex-jb/polymarket-brier-skill/releases)
+
 > Tell me what's hot **and** whether I should believe it.
 
 A Claude Code skill that forecasts Polymarket questions with Haiku, persists every prediction, and Brier-scores them after resolution. The result: a 30-day calibration ledger for any tagged source — yourself, a Twitter influencer, a research bot, an LLM, the prediction market itself.
