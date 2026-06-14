@@ -10,6 +10,17 @@ A Claude Code skill that forecasts Polymarket questions with Haiku, persists eve
 
 中文版: [README.zh-CN.md](./README.zh-CN.md)
 
+## Why this matters in mid-June 2026
+
+Two events in the last week reshaped the calibration question:
+
+1. **Anthropic made Skills an open standard (2026-06-09).** `.claude/skills` directories now auto-load. Anthropic's new "advisor strategy" beta lets agents consult an advisor model before deciding.
+2. **skills.sh (Vercel) crossed 669,670 published skills (as of 2026-06-05 API release).** Snyk runs security audits on every install. Nobody runs *helpfulness* audits.
+
+The result: there are now hundreds of thousands of skills shipping advice with no way to know which advisors have been right. polymarket-brier is the smallest tool that closes the calibration loop for any binary forecast — pipe a skill's verdict through `/brier forecast --source=skill:<slug>` and 30 days later the digest tells you whether that skill was actually predictive.
+
+`/brier audit` runs deterministic math (no model calls) so the calibration ledger is reproducible and disputable. That's the part 669K skills don't have yet.
+
 ## Install
 
 ```bash
