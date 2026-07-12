@@ -1,5 +1,15 @@
 # polymarket-brier-skill
 
+
+## ⚠️ Educational research, not financial advice
+
+This repository is published for educational and research purposes. Nothing
+here is investment, trading, or financial advice. The models, signals, and
+outputs shown are experimental and may be wrong. Past performance does not
+predict future results. Do not use any output as the basis for a real
+trading, investment, or hedging decision without independent professional
+verification. The author accepts no liability for losses.
+
 [![test](https://github.com/alex-jb/polymarket-brier-skill/actions/workflows/test.yml/badge.svg)](https://github.com/alex-jb/polymarket-brier-skill/actions/workflows/test.yml)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![Release](https://img.shields.io/github/v/release/alex-jb/polymarket-brier-skill)](https://github.com/alex-jb/polymarket-brier-skill/releases)
